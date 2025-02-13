@@ -59,7 +59,7 @@ class SisPy(object):
             self._outlets.append(Outlet(i, self))
 
     def _get_device(self):  # pragma: no cover
-        devs = usb.core.find(find_all=True, idVendor=0x04b4)
+        devs = usb.core.find(idVendor=0x04b4)
         if devs is None:
             print("No Energenie products found")
             sys.exit(0)
