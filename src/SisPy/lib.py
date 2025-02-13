@@ -24,6 +24,7 @@ import struct
 import time
 import calendar
 import usb
+import sys
 
 
 def _min2human(minutes):
